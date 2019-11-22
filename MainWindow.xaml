@@ -1,0 +1,23 @@
+﻿<Window x:Name="mainWindow" x:Class="Minesweeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Minesweeper"
+        mc:Ignorable="d"
+        Title="Minesweeper" Height="516.667" Width="800" WindowStartupLocation="CenterScreen" SizeChanged="Window_SizeChanged" MinWidth="385" MinHeight="475" Closing="mainWindow_Closing">
+    <Grid x:Name="mainGrid" Margin="0,0,0,0">
+        <Grid x:Name="grid" Margin="10,80,10,10"/>
+        <Button x:Name="BtnOptions" Content="Options" Margin="0,9,215,0" Width="100" Click="BtnOptions_Click" Background="#FFB3B3B3" Height="27" FontSize="14" FontFamily="Arial Rounded MT Bold" FontWeight="Medium" HorizontalAlignment="Center" BorderBrush="Black" Focusable="False" VerticalAlignment="Top"/>
+        <Button x:Name="BtnScores" Content="Scores" Margin="0,43,215,0" VerticalAlignment="Top" Width="100" Click="BtnHiscores_Click" Background="#FFB3B3B3" Height="27" FontSize="14" FontFamily="Arial Rounded MT Bold" FontWeight="Medium" HorizontalAlignment="Center" BorderBrush="Black" Focusable="False" />
+        <Button x:Name="BtnRestart" Content="Restart" Margin="215,9,0,0" VerticalAlignment="Top" Width="100" Click="BtnRestart_Click" Background="#FFB3B3B3" Height="27" FontSize="14" FontFamily="Arial Rounded MT Bold" FontWeight="Medium" HorizontalAlignment="Center" BorderBrush="Black" Focusable="False"/>
+        <Button x:Name="BtnNewGame" Content="New Game" Margin="215,43,0,0" VerticalAlignment="Top" Width="100" Click="BtnNewGame_Click" Background="#FFB3B3B3" Height="27" FontSize="14" FontFamily="Arial Rounded MT Bold" FontWeight="Medium" HorizontalAlignment="Center" BorderBrush="Black" Focusable="False"/>
+        <Label x:Name="lblTime" Content="0" Margin="0,35,50,0" VerticalAlignment="Top" FontSize="18" FontWeight="Medium" Background="Black" HorizontalAlignment="Center" Foreground="Red" Width="50" Height="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Impact" BorderBrush="#FF404040" BorderThickness="3" MaxHeight="35" MaxWidth="50" MinHeight="35" MinWidth="50"/>
+        <Label x:Name="lblMines" Content="99" Margin="50,35,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Medium" Background="Black" HorizontalAlignment="Center" Foreground="Red" Width="50" Height="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Impact" BorderBrush="#FF404040" BorderThickness="3" MaxHeight="35" MinHeight="35" MinWidth="50" MaxWidth="50"/>
+        <Label x:Name="label" Content="Time" FontSize="13" Margin="0,9,50,0" Width="50" Background="#FF626262" Foreground="Red" HorizontalContentAlignment="Center" BorderBrush="#FF404040" BorderThickness="0" Height="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" MinHeight="27" MaxHeight="27" MinWidth="3"/>
+        <Label x:Name="label_Copy" Content="Mines" FontSize="13" Margin="50,9,0,0" Width="50" Background="#FF626262" Foreground="Red" HorizontalContentAlignment="Center" BorderBrush="#FF404040" BorderThickness="0" Height="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" MinHeight="27" MaxHeight="27" MinWidth="3"/>
+    </Grid>
+   
+</Window>
+
+    

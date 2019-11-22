@@ -1,0 +1,15 @@
+﻿<Window x:Class="Minesweeper.ScoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Minesweeper"
+        mc:Ignorable="d"
+        Title="Scores" Height="303.624" Width="216.913" WindowStartupLocation="Manual" MaxWidth="220" MinWidth="220" SizeChanged="Window_SizeChanged" MinHeight="150">
+    <Grid Name="grid" HorizontalAlignment="Left" Width="207" Margin="0,0,0,-5">
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="220" Margin="10,40,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label x:Name="lblEasy" Content="Easy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,10,0,0"/>
+        <Label x:Name="lblMedium" Content="Med" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81,10,0,0"/>
+        <Label x:Name="lblHard" Content="Hard" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,10,0,0"/>
+    </Grid>
+</Window>
